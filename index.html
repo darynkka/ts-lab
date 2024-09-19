@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
@@ -20,32 +20,15 @@
           <h2 class="card-title mb-3 fs-4">Додати книгу</h2>
           <form>
             <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="bookTitle"
-                placeholder="Назва книги"
-              />
+              <input type="text" class="form-control" id="bookTitle" placeholder="Назва книги" />
             </div>
             <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="bookAuthor"
-                placeholder="Автор"
-              />
+              <input type="text" class="form-control" id="bookAuthor" placeholder="Автор" />
             </div>
             <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="bookYear"
-                placeholder="Рік видання"
-              />
+              <input type="text" class="form-control" id="bookYear" placeholder="Рік видання" />
             </div>
-            <button type="button" id="addBookBtn" class="btn btn-success">
-              Додати книгу
-            </button>
+            <button type="button" id="addBookBtn" class="btn btn-success">Додати книгу</button>
           </form>
         </div>
       </div>
@@ -55,20 +38,10 @@
           <h2 class="card-title mb-3 fs-4">Додати користувача</h2>
           <form>
             <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="userName"
-                placeholder="Ім'я"
-              />
+              <input type="text" class="form-control" id="userName" placeholder="Ім'я" />
             </div>
             <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="userEmail"
-                placeholder="Email"
-              />
+              <input type="email" class="form-control" id="userEmail" placeholder="Email" />
             </div>
             <button type="button" id="addUserBtn" class="btn btn-success">
               Додати Користувача
@@ -131,9 +104,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="borrowBookModalLabel">
-              Позичити книгу
-            </h5>
+            <h5 class="modal-title" id="borrowBookModalLabel">Позичити книгу</h5>
             <button
               type="button"
               class="btn-close"
@@ -146,12 +117,7 @@
             <input type="text" class="form-control" id="borrowUserId" />
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-primary"
-              id="confirmBorrowButton">
-              Позичити
-            </button>
+            <button type="button" class="btn btn-primary" id="confirmBorrowButton">Позичити</button>
           </div>
         </div>
       </div>
@@ -183,13 +149,24 @@
       </div>
     </div>
 
-
-    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="errorModal"
+      tabindex="-1"
+      aria-labelledby="errorModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="errorModalTitle">Error</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" data-modal-id="errorModal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              data-modal-id="errorModal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <p id="errorModalMessage"></p>
